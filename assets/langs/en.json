@@ -1,6 +1,9 @@
 {
-    "app_name": "Expense Tracker",
+    "appName": "monizo",
     "add_expense": "Add Expense",
     "total": "Total",
-    "settings": "Settings"
-}  
+    "settings": "Settings",
+    "change_language": "Change Language",
+    "turkish": "Turkish",
+    "english": "English"
+}

@@ -1,6 +1,9 @@
 {
-    "app_name": "Harcama Takipçisi",
-    "add_expense": "Harcama Ekle",
+    "appName": "monizo",
+    "addExpense": "Harcama Ekle",
     "total": "Toplam",
-    "settings": "Ayarlar"
-}  
+    "settings": "Ayarlar",
+    "changeLanguage": "Dili Değiştir",
+    "turkish": "Türkçe",
+    "english": "İngilizce"
+}
