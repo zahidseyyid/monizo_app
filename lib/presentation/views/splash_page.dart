@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:monizo_app/core/constants/app_strings.dart';
+import 'package:monizo_app/core/extensions/text_style_extensions.dart';
 import 'package:monizo_app/core/theme/colors.dart';
-import 'package:monizo_app/core/theme/text_styles.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -17,7 +17,7 @@ class SplashPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(AppStrings.appName, style: displayMedium(context: context))
+              Text(AppStrings.appName, style: context.displayMedium),
             ],
           ),
         ),
