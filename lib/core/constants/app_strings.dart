@@ -1,15 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 
 class AppStrings {
-  static String appName = "appName".tr();
-  static String changeLanguage = "changeLanguage".tr();
-  static String total = "total".tr();
-  static String turkish = "turkish".tr();
-  static String tr = "tr";
-  static String english = "english".tr();
-  static String en = "en";
-  static String settings = "settings".tr();
-
-  // Assets paths
-  static String get languagePath => "assets/langs";
+  static String get appName => "appName".tr();
+  static String get total => "total".tr();
+  static String get settings => "settings".tr();
+  static String get turkish => "turkish".tr();
+  static String get tr => "tr".tr();
+  static String get english => "english".tr();
+  static String get en => "en".tr();
+  static String get onboardingTitle => "onboardingTitle".tr();
+  static String get onboardingButtonTitle => "onboardingButtonTitle".tr();
 }
