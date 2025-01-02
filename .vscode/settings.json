@@ -2,7 +2,7 @@
     "files.exclude": {
         ".dart_tool": false,
         "*/.iml": true,
-        "build": true,
+        "build": true
     },
     "security.workspace.trust.enabled": false,
     "[dart]": {
@@ -18,7 +18,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": "off",
+        "editor.wordBasedSuggestions": "off"
     },
     "dart.previewFlutterUiGuides": true,
     "dart.warnWhenEditingFilesOutsideWorkspace": false,
@@ -28,8 +28,16 @@
     "editor.formatOnSave": true,
     "editor.stickyScroll.enabled": true,
     "explorer.fileNesting.patterns": {
-        "*.dart": "${capture}.g.dart, ${capture}.config.dart,${capture}.routes.dart" // madde 1.c 
+        "*.dart": "${capture}.g.dart, ${capture}.config.dart,${capture}.routes.dart"
     },
     "explorer.fileNesting.enabled": true,
-    "explorer.fileNesting.expand": false
+    "explorer.fileNesting.expand": false,
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "assets/langs/en.json$",
+                "cmd": "dart /Users/cheavbella/projectFlutter/monizo_app/localization_checker.dart"
+            }
+        ]
+    }
 }

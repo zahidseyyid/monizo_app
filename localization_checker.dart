@@ -1,7 +1,7 @@
+// ignore_for_file: avoid_print
+
 import 'dart:convert';
 import 'dart:io';
-
-import 'package:flutter/foundation.dart';
 
 void main() async {
   const languagePath = "assets/langs";
@@ -11,9 +11,7 @@ void main() async {
   // en.json anahtarlarını yükle
   final mainJson = File(mainJsonFile);
   if (!await mainJson.exists()) {
-    if (kDebugMode) {
-      print("Main JSON file (en.json) not found at $mainJsonFile");
-    }
+    print("Main JSON file (en.json) not found at $mainJsonFile");
     return;
   }
 
@@ -23,9 +21,7 @@ void main() async {
   // Dil klasörünü tara
   final langDir = Directory(languagePath);
   if (!await langDir.exists()) {
-    if (kDebugMode) {
-      print("Language directory not found at $languagePath");
-    }
+    print("Language directory not found at $languagePath");
     return;
   }
 
@@ -42,9 +38,7 @@ void main() async {
       for (final key in keysToRemove) {
         content.remove(key);
       }
-      if (kDebugMode) {
-        print("Removed keys from ${file.path}: ${keysToRemove.join(', ')}");
-      }
+      print("Removed keys from ${file.path}: ${keysToRemove.join(', ')}");
     }
 
     // en.json içinde olup bu dil dosyasında olmayan anahtarları ekle
@@ -53,9 +47,7 @@ void main() async {
       for (final key in keysToAdd) {
         content[key] = mainJsonContent[key]; // Varsayılan değeri en.json'dan al
       }
-      if (kDebugMode) {
-        print("Added keys to ${file.path}: ${keysToAdd.join(', ')}");
-      }
+      print("Added keys to ${file.path}: ${keysToAdd.join(', ')}");
     }
 
     // Güncellenmiş dosyayı yaz
@@ -63,14 +55,10 @@ void main() async {
     final formattedJson = encoder.convert(content);
 
     await file.writeAsString(formattedJson);
-    if (kDebugMode) {
-      print("Updated ${file.path}.");
-    }
+    print("Updated ${file.path}.");
   }
 
-  if (kDebugMode) {
-    print("All language files synchronized with en.json.");
-  }
+  print("All language files synchronized with en.json.");
 
   // AppStrings sınıfını oluştur
   final appStrings = StringBuffer();
@@ -89,9 +77,7 @@ void main() async {
 
   final appStringsFileHandle = File(appStringsFile);
   await appStringsFileHandle.writeAsString(appStrings.toString());
-  if (kDebugMode) {
-    print("AppStrings.dart updated at $appStringsFile.");
-  }
+  print("AppStrings.dart updated at $appStringsFile.");
 }
 
 String _toCamelCase(String input) {
