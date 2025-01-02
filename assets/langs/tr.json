@@ -1,9 +1,11 @@
 {
-    "appName": "monizo",
-    "addExpense": "Harcama Ekle",
-    "total": "Toplam",
-    "settings": "Ayarlar",
-    "changeLanguage": "Dili Değiştir",
-    "turkish": "Türkçe",
-    "english": "İngilizce"
+  "appName": "monizo",
+  "total": "Toplam",
+  "settings": "Ayarlar",
+  "turkish": "Türkçe",
+  "english": "İngilizce",
+  "onboardingTitle": "Daha Akıllı Harcayın Daha Fazla Biriktirin",
+  "onboardingButtonTitle": "Başla",
+  "tr": "tr",
+  "en": "en"
 }
