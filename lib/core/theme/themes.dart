@@ -8,6 +8,8 @@ class AppTheme {
     primaryColor: AppColors.primary,
     textTheme: TextTheme(
       displayMedium: AppTextStyles.displayMedium50,
+      displaySmall: AppTextStyles.displaySmall36,
+      titleMedium: AppTextStyles.titleMedium18,
     ),
   );
 }
