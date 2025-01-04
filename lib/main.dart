@@ -6,7 +6,7 @@ import 'package:monizo_app/core/constants/app_assets.dart';
 import 'package:monizo_app/core/theme/themes.dart';
 import 'package:monizo_app/presentation/views/onboarding_page.dart';
 import 'package:toastification/toastification.dart';
-// update project 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
