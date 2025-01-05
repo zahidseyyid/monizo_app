@@ -1,6 +1,6 @@
 name: monizo_app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -25,6 +25,10 @@ dev_dependencies:
   build_runner: ^2.4.13
   freezed: ^2.5.7
   json_serializable: ^6.9.0
+  appvory_dev_kit:
+    git:
+      url: git@github.com:Appvory/appvory_dev_kit.git
+      ref: main
 
 flutter:
   uses-material-design: true
