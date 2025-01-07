@@ -32,7 +32,7 @@ void main() async {
     final content = jsonDecode(await file.readAsString());
     final fileKeys = content.keys.toSet();
 
-    // en.json içinde olmayan anahtarları kaldır
+    // en.json içinde olmayan anahtarları kaldır (main dosya en.json)
     final keysToRemove = fileKeys.difference(mainKeys);
     if (keysToRemove.isNotEmpty) {
       for (final key in keysToRemove) {
