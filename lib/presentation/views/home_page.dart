@@ -9,32 +9,30 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white,
-      extendBodyBehindAppBar: true, // AppBar'ın arkasını genişlet
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.transparent, // Şeffaf yap
-        elevation: 0, // Gölgeyi kaldır
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         title: const Text(
           'Home Page',
-          style: TextStyle(color: Colors.white), // Başlık rengi
+          style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications, color: Colors.white),
-            onPressed: () {
-              // Bildirim aksiyonu
-            },
+            onPressed: () {},
           ),
         ],
       ),
       body: Column(
         children: [
-          const HeaderCurveContainer(), // Header'ın tasarımı burada
+          const HeaderCurveContainer(),
           Expanded(
             child: Container(
-              color: Colors.white, // Ana ekranın arka planı
+              color: Colors.white,
               child: const Center(
-                child: Text("Body Content"), // İçerik
+                child: Text("Body Content"),
               ),
             ),
           ),
