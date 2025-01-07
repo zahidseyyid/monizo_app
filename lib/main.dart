@@ -5,6 +5,7 @@ import 'package:monizo_app/core/constants/app_strings.dart';
 import 'package:monizo_app/core/constants/app_assets.dart';
 import 'package:monizo_app/core/theme/themes.dart';
 import 'package:monizo_app/presentation/views/home_page.dart';
+import 'package:monizo_app/presentation/views/onboarding_page.dart';
 import 'package:toastification/toastification.dart';
 
 void main() async {
@@ -37,7 +38,7 @@ class MainApp extends StatelessWidget {
             localizationsDelegates: context.localizationDelegates,
             supportedLocales: context.supportedLocales,
             locale: context.locale,
-            home: const HomePage(),
+            home: const OnboardingPage(),
           ),
         );
       },
