@@ -25,17 +25,9 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
+      body: const Column(
         children: [
-          const HeaderCurveContainer(),
-          Expanded(
-            child: Container(
-              color: Colors.white,
-              child: const Center(
-                child: Text("Body Content"),
-              ),
-            ),
-          ),
+          HeaderCurveContainer(),
         ],
       ),
     );
