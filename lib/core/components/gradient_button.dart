@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:monizo_app/core/extensions/text_style_extensions.dart';
-import 'package:monizo_app/core/theme/colors.dart';
+import 'package:monizo_app/core/theme/app_colors.dart';
 
 class GradientButton extends StatelessWidget {
   final String text;
@@ -20,19 +20,19 @@ class GradientButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 40),
         decoration: BoxDecoration(
           gradient: AppColors.primaryGradient,
-          borderRadius: BorderRadius.circular(30), // Kenar yuvarlama
+          borderRadius: BorderRadius.circular(30),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.2), // Gölge rengi
-              offset: const Offset(0, 5), // Gölge pozisyonu
-              blurRadius: 10, // Gölge bulanıklık
+              color: Colors.black.withOpacity(0.2),
+              offset: const Offset(0, 5),
+              blurRadius: 10,
             ),
           ],
         ),
         child: Center(
           child: Text(
             text,
-            style: context.titleMedium(),
+            style: context.titleMedium18,
           ),
         ),
       ),
