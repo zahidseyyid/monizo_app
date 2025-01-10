@@ -43,7 +43,7 @@ class TransactionsListTileWidget extends StatelessWidget {
         ),
       ),
       trailing: AutoSizeText(
-        '₺ $transactionAmount',
+        '${index % 2 == 0 ? '+ ' : '- '}₺ $transactionAmount',
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
         style: context.titleMedium18.copyWith(
