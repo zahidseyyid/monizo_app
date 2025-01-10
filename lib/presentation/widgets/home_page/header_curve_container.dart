@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:monizo_app/core/theme/colors.dart';
+import 'package:monizo_app/core/theme/app_colors.dart';
 
 class HeaderCurveContainer extends StatelessWidget {
   const HeaderCurveContainer({
@@ -12,6 +12,7 @@ class HeaderCurveContainer extends StatelessWidget {
     return ClipPath(
       clipper: SmoothCurveClipper(),
       child: Container(
+        width: double.infinity,
         height: 287.h,
         decoration: const BoxDecoration(
           gradient: AppColors.primaryGradient,
