@@ -5,7 +5,7 @@ import 'package:monizo_app/core/components/gradient_button.dart';
 import 'package:monizo_app/core/constants/app_assets.dart';
 import 'package:monizo_app/core/constants/app_strings.dart';
 import 'package:monizo_app/core/extensions/text_style_extensions.dart';
-import 'package:monizo_app/core/theme/colors.dart';
+import 'package:monizo_app/core/theme/app_colors.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -25,7 +25,7 @@ class OnboardingPage extends StatelessWidget {
                 child: Text(
                   AppStrings.onboardingTitle,
                   textAlign: TextAlign.center,
-                  style: context.displaySmall,
+                  style: context.displaySmall36,
                   maxLines: 2,
                 ),
               ),
