@@ -1,11 +1,15 @@
+import 'package:appvory_dev_kit/appvory_dev_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:monizo_app/core/constants/app_strings.dart';
 import 'package:monizo_app/core/constants/app_assets.dart';
 import 'package:monizo_app/core/theme/themes.dart';
-import 'package:monizo_app/presentation/views/home_page.dart';
+import 'package:monizo_app/presentation/views/root_page.dart';
 import 'package:toastification/toastification.dart';
+
+import 'core/data/bottom_navigation_data.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +19,12 @@ void main() async {
       supportedLocales: [Locale(AppStrings.tr), Locale(AppStrings.en)],
       path: AppAssets.languagePath,
       fallbackLocale: Locale(AppStrings.en),
-      child: const MainApp(),
+      child: BlocProvider(
+        create: (context) => NavigationBloc(
+          items: pages,
+        ),
+        child: const MainApp(),
+      ),
     ),
   );
 }
@@ -37,7 +46,7 @@ class MainApp extends StatelessWidget {
             localizationsDelegates: context.localizationDelegates,
             supportedLocales: context.supportedLocales,
             locale: context.locale,
-            home: const HomePage(),
+            home: const RootPage(),
           ),
         );
       },
