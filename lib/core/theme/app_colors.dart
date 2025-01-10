@@ -24,4 +24,8 @@ class AppColors {
   static const lightGreen = Color(0xFF3E7C78);
   static const textGrey = Color(0xFFD0E5E4);
   static const titleGreen = Color(0xFF25A969);
+  static const cardGreen = Color(0xFF2F7E79);
+  static const textButtonGrey = Color(0xFF666666);
+  static const textExpensesRed = Color(0xFFF95B51);
+  static const textIncomeGreen = Color(0xFF25A969);
 }
