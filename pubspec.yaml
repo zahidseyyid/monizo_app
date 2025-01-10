@@ -17,18 +17,19 @@ dependencies:
   google_fonts: ^6.2.1
   json_annotation: ^4.9.0
   toastification: ^2.3.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^4.0.0
-  build_runner: ^2.4.13
-  freezed: ^2.5.7
-  json_serializable: ^6.9.0
   appvory_dev_kit:
     git:
       url: git@github.com:Appvory/appvory_dev_kit.git
       ref: main
+  flutter_bloc: ^8.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.9.0
 
 flutter:
   uses-material-design: true
