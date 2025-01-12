@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 
-class AppStrings {
+class AppMultiLanguageStrings {
   static String get appName => "appName".tr();
   static String get total => "total".tr();
   static String get settings => "settings".tr();
