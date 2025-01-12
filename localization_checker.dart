@@ -6,7 +6,8 @@ import 'dart:io';
 void main() async {
   const languagePath = "assets/langs";
   const mainJsonFile = "assets/langs/en.json";
-  const appStringsFile = "lib/core/constants/app_strings.dart";
+  const appMultiLanguageStringsFile =
+      "lib/core/constants/app_multi_language_strings.dart";
 
   // en.json anahtarlarını yükle
   final mainJson = File(mainJsonFile);
@@ -60,24 +61,26 @@ void main() async {
 
   print("All language files synchronized with en.json.");
 
-  // AppStrings sınıfını oluştur
-  final appStrings = StringBuffer();
-  appStrings
+  // appMultiLanguageStrings sınıfını oluştur
+  final appMultiLanguageStrings = StringBuffer();
+  appMultiLanguageStrings
       .writeln("import 'package:easy_localization/easy_localization.dart';");
-  appStrings.writeln();
-  appStrings.writeln("class AppStrings {");
+  appMultiLanguageStrings.writeln();
+  appMultiLanguageStrings.writeln("class AppMultiLanguageStrings {");
 
   for (final key in mainKeys) {
     final camelCaseKey = _toCamelCase(key);
-    appStrings.writeln(
+    appMultiLanguageStrings.writeln(
         "  static String get $camelCaseKey => \"$key\".tr();"); // Getter metot olarak ekle
   }
 
-  appStrings.writeln("}");
+  appMultiLanguageStrings.writeln("}");
 
-  final appStringsFileHandle = File(appStringsFile);
-  await appStringsFileHandle.writeAsString(appStrings.toString());
-  print("AppStrings.dart updated at $appStringsFile.");
+  final appMultiLanguageStringsFileHandle = File(appMultiLanguageStringsFile);
+  await appMultiLanguageStringsFileHandle
+      .writeAsString(appMultiLanguageStrings.toString());
+  print(
+      "AppMultiLanguageStrings.dart updated at $appMultiLanguageStringsFile.");
 }
 
 String _toCamelCase(String input) {
