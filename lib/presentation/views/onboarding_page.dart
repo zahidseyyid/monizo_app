@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:monizo_app/core/components/gradient_button.dart';
 import 'package:monizo_app/core/constants/app_assets.dart';
-import 'package:monizo_app/core/constants/app_strings.dart';
+import 'package:monizo_app/core/constants/app_multi_language_strings.dart';
 import 'package:monizo_app/core/extensions/text_style_extensions.dart';
 import 'package:monizo_app/core/theme/app_colors.dart';
 
@@ -23,7 +23,7 @@ class OnboardingPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 55.w),
                 child: Text(
-                  AppStrings.onboardingTitle,
+                  AppMultiLanguageStrings.onboardingTitle,
                   textAlign: TextAlign.center,
                   style: context.displaySmall36,
                   maxLines: 2,
@@ -33,7 +33,7 @@ class OnboardingPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 25.w),
                 child: GradientButton(
-                  text: AppStrings.onboardingButtonTitle,
+                  text: AppMultiLanguageStrings.onboardingButtonTitle,
                   onPressed: () {
                     if (context.locale == const Locale("tr")) {
                       context.setLocale(const Locale("en"));
