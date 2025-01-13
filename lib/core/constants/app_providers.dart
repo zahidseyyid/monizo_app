@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:appvory_dev_kit/appvory_dev_kit.dart';
 import 'package:monizo_app/core/constants/app_constants.dart';
-import 'package:monizo_app/core/data/bottom_navigation_data.dart';
 
 class AppProviders extends StatelessWidget {
   final Widget child;
@@ -14,7 +13,7 @@ class AppProviders extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (_) => NavigationBloc(items: pages),
+          create: (_) => NavigationBloc(items: AppConstants.pages),
         ),
         BlocProvider(
           create: (_) => LocaleBloc(
