@@ -1,31 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:appvory_dev_kit/appvory_dev_kit.dart';
-import 'package:monizo_app/presentation/views/home_page.dart';
-import 'package:monizo_app/presentation/views/onboarding_page.dart';
-import 'package:monizo_app/presentation/views/splash_page.dart';
 
-final pages = [
-  NavigationItem(
-    title: 'Home',
-    icon: Icons.home,
-  ),
-  NavigationItem(
-    title: 'Statistics',
-    icon: Icons.insert_chart,
-  ),
-  NavigationItem(
-    title: 'Wallet',
-    icon: Icons.account_balance_wallet,
-  ),
-  NavigationItem(
-    title: "Profile",
-    icon: Icons.person,
-  ),
-];
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
 
-final pagesRoute = [
-  HomePage(),
-  OnboardingPage(),
-  SplashPage(),
-  SplashPage(),
-];
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+class WidgetPage extends StatelessWidget {
+  const WidgetPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+class StatisticsPage extends StatelessWidget {
+  const StatisticsPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Statistics Page'),
+      ),
+      body: Center(
+        child: Text('Statistics Page'),
+      ),
+    );
+  }
+}
