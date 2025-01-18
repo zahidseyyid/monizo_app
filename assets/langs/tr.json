@@ -3,9 +3,9 @@
   "total": "Toplam",
   "settings": "Ayarlar",
   "turkish": "Türkçe",
-  "english": "İngilizce",
-  "onboardingTitle": "Daha Akıllı Harcayın Daha Fazla Biriktirin",
-  "onboardingButtonTitle": "Başla",
   "tr": "tr",
-  "en": "en"
+  "english": "İngilizce",
+  "en": "en",
+  "onboardingTitle": "Daha Akıllı Harcayın Daha Fazla Biriktirin",
+  "onboardingButtonTitle": "Başla"
 }
