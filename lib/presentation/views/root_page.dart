@@ -13,6 +13,7 @@ class RootPage extends StatelessWidget {
         onPressed: () {
           showDialog(
             context: context,
+            barrierDismissible: false,
             builder: (context) => const CustomDialog(),
           );
         },
